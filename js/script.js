@@ -1,6 +1,6 @@
 var p =0;
 var down=90;
-
+var lock_scroll=0;
 function li_setup() {
     move_section(0);
     for (i = 0; i < 4; i++) {
@@ -21,11 +21,16 @@ function move_section(a) {
     p=a;
     for (i = 0; i < 4; i++) {
         document.getElementsByTagName('section')[i].style = "left:"+(-(100*a))+'vw;top:90px;';
+        lock_scroll=1;
     }
+    setTimeout(() => {
+        lock_scroll=0;
+    }, 2000);
 }
 
 window.addEventListener("wheel", event => {
     const delta = Math.sign(event.wheelDelta);
+    if(lock_scroll==0){
     if(delta==1){
         // monter
         down +=80;
@@ -39,4 +44,5 @@ window.addEventListener("wheel", event => {
         down -=80;
         document.getElementsByTagName('section')[p].style.top = down+'px';
     }
+}
 });
