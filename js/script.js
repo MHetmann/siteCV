@@ -28,12 +28,12 @@ window.addEventListener("wheel", event => {
     const delta = Math.sign(event.wheelDelta);
     if(delta==1){
         // descendre
-        down +=35;
+        down +=100;
         document.getElementsByTagName('section')[p].style.top = down+'px';
     }
     else{
         // monter
-        down -=35;
+        down -=100;
         document.getElementsByTagName('section')[p].style.top = down+'px';
     }
 });
