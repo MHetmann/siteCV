@@ -28,8 +28,29 @@ nav ul {
     justify-content: flex-end;
 }
 
+@media screen and (max-width:1000px){
+    nav ul {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:730px){
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li{
+        top:0;
+    }
+
+    nav ul li a{
+        text-align: center;
+    }
+}
+
 nav ul li {
     display: flex;
+    justify-items: center;
     list-style: none;
     margin:15px 10px;
     background:#E6E8E6;
@@ -37,7 +58,6 @@ nav ul li {
     font-size: 1.1em;
     font-weight: 700;
     letter-spacing: 1.5px;
-    align-items: center;
     top:-100px;
     transition: box-shadow 0.2s linear ,top 1.2s ease-in-out;
     border-radius: 7px;
@@ -48,6 +68,7 @@ nav li a{
     padding:0.8em 1em;
     color: #F15025;
     text-decoration: none;
+    width: 100%;
 }
 
 nav ul li:first-child{

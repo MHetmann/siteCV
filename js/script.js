@@ -27,13 +27,16 @@ function move_section(a) {
 window.addEventListener("wheel", event => {
     const delta = Math.sign(event.wheelDelta);
     if(delta==1){
-        // descendre
-        down +=100;
+        // monter
+        down +=80;
+        if(down>90){
+            down=90
+        }
         document.getElementsByTagName('section')[p].style.top = down+'px';
     }
     else{
-        // monter
-        down -=100;
+        // descendre
+        down -=80;
         document.getElementsByTagName('section')[p].style.top = down+'px';
     }
 });
