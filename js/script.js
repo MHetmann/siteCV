@@ -26,6 +26,15 @@ if (window.matchMedia("(min-width: 730px)").matches) { // superieur a 730 px
             document.getElementsByTagName('section')[i].style = "left:" + (-(100 * a)) + 'vw;top:90px;';
             lock_scroll = 1;
         }
+
+
+        document.getElementsByTagName('a')[0].style.borderWidth ="0";
+        document.getElementsByTagName('a')[1].style.borderWidth ="0";
+        document.getElementsByTagName('a')[2].style.borderWidth ="0";
+        document.getElementsByTagName('a')[3].style.borderWidth ="0";
+        document.getElementsByTagName('a')[p].style.borderWidth ="3px";
+
+
         setTimeout(() => {
             lock_scroll = 0;
         }, 2000);
