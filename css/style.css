@@ -81,7 +81,7 @@ section{
     transition: left 2s ease-in-out,top .35s ease-out;
     top:90px;
     flex-basis: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 section h1{
