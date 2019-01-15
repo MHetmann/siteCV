@@ -223,7 +223,6 @@ section h1{
     section{
         top:0;
         width: 100vw;
-        flex-basis: 100vh;
     }
     
     #hamburger_menu{
