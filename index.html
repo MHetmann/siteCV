@@ -5,84 +5,102 @@
   <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href ="#" onclick="move_section(0)">Accueil</a></li>
-      <li><a href ="#" onclick="move_section(1)">Portfolio</a></li>
-      <li><a href ="#" onclick="move_section(2)">Contact</a></li>
-      <li><a href ="#" onclick="move_section(3)">A propos</a></li>
-    </ul>
-  </nav>
-  <section id = "Accueil">
-    
-    <h1>Accueil</h1>
-  
-  
-  
-  
-  </section>
-
-
-  <section id = "Portfolio">
-    
-    <h1>Portfolio</h1>
-  <div id="portfolio_site">
-    <div class="site_img site1"></div>
-    <div class="site_img site2"></div>
-    <div class="site_img site3"></div>
-    <div class="site_img site4"></div>
-    <div class="site_img site5"></div>
-    <div class="site_img site1"></div>
-    <div class="site_img site2"></div>
-    <div class="site_img site3"></div>
-    <div class="site_img site4"></div>
-    <div class="site_img site5"></div>
-    
+  <div id="hamburger_menu" class="toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-  
-  
-  
-  
-  
-  
-  
+  <nav id="navbar">
+    <ul>
+      <li><a href="#" onclick="move_section(0)"><i class="fas fa-home"></i>Accueil</a></li>
+      <li><a href="#" onclick="move_section(1)"><i class="fab fa-github"></i>Portfolio</a></li>
+      <li><a href="#" onclick="move_section(2)"><i class="fas fa-address-book"></i>Contact</a></li>
+      <li><a href="#" onclick="move_section(3)"><i class="fas fa-info-circle"></i>A propos</a></li>
+    </ul>
+    <div id="bot_nav"></div>
+  </nav>
+  <section id="Accueil">
+
+    <h1>Accueil</h1>
+
+
+
   </section>
 
 
-  <section id = "Contact">
-    
+  <section id="Portfolio">
+
+    <h1>Portfolio</h1>
+    <div id="portfolio_site">
+      <a href="../jeu_precision/index.html">
+        <div class="site_img" id="site1"></div>
+      </a>
+      <a href="../jeu_precision/index.html">
+        <div class="site_img" id="site2"></div>
+      </a>
+      <a href="../jeu_precision/index.html">
+        <div class="site_img" id="site3"></div>
+      </a>
+      <a href="../jeu_precision/index.html">
+        <div class="site_img" id="site4"></div>
+      </a>
+      <a href="../jeu_precision/index.html">
+        <div class="site_img" id="site5"></div>
+      </a>
+      <a href="../jeu_precision/index.html">
+        <div class="site_img" id="site6"></div>
+      </a>
+
+    </div>
+
+
+
+
+
+
+
+  </section>
+
+
+  <section id="Contact">
+
     <h1>Contact</h1>
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
   </section>
 
 
-  <section id = "apropos">
-    
+  <section id="apropos">
+
     <h1>A propos</h1>
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
   </section>
 
-  <script src ="js/script.js">
+  <script src="js/script.js">
   </script>
 
 </body>
